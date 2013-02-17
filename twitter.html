@@ -9,11 +9,14 @@
   
 </head>
 
-<body ng-app="behaviourApp">
+<body ng-app="twitterApp">
 
-    <div enter="panel" leave>I'm content</div>
-  
+  <div ng-controller="AppController">
+    <div enter="loadMoreTweets()">Roll over to load more tweets</div> 
+    <div enter="deleteTweets()">Roll over to delete tweets</div> 
+  </div>
+
 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.4/angular.js"></script>
-<script src="behaviour.js"></script>
+<script src="twitter.js"></script>
 </body>
 </html>
