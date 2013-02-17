@@ -1,9 +1,13 @@
 var app = angular.module('behaviourApp', []);
 
-app.controller('AppCtrl', function($scope) {
-  this.sayHi = function() {
-    console.log('Hi'); 
-  }
+var controllers = {
+  AppCtrl: function($scope) {
+    this.sayHi = function() {
+      console.log('Hi'); 
+    } 
 
-  return $scope.AppCtrl = this;
-});
+    return $scope.AppCtrl = this;
+  }
+}
+
+app.controller(controllers);
