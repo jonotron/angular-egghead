@@ -12,7 +12,10 @@
 <body ng-app="drinkApp">
 
   <div ng-controller="AppCtrl">
-    <div drink flavour="{{ctrlFlavour}}"></div>
+    Ctrl: <input type="text" ng-model="ctrlFlavour">
+
+    Dir:
+    <div drink flavour="ctrlFlavour"></div>
   </div>
 
 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.4/angular.js"></script>

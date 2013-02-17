@@ -8,7 +8,7 @@ app.controller("AppCtrl", function($scope) {
 app.directive("drink", function() {
   return {
     scope: {
-      flavour: "@", 
+      flavour: "=", 
     },
 
     template: '<div>{{flavour}}</div>'
