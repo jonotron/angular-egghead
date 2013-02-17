@@ -16,9 +16,9 @@
     <input type="text" ng-model="search.$">
 
     <table>
-      <tr ng-repeat="actor in avengers.cast | filter:search">
+      <tr ng-repeat="actor in avengers.cast | filter:search | orderBy:'name' | limitTo:5">
         <td>{{ actor.name }}</td>
-        <td>{{ actor.character }}</td>
+        <td>{{ actor.character | uppercase }}</td>
     </table>
   </div>
 </div>
