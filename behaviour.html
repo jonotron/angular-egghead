@@ -11,7 +11,9 @@
 
 <body ng-app="behaviourApp">
 
-    <div enter="panel" leave>I'm content</div>
+    <div ng-controller="AppCtrl">
+      <div class="button" ng-click="AppCtrl.sayHi()">click me</div>
+    </div>
   
 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.4/angular.js"></script>
 <script src="behaviour.js"></script>
