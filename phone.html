@@ -12,9 +12,8 @@
 <body ng-app="phoneApp">
 
   <div ng-controller="AppCtrl">
-    <phone dial="callHome(message)"></phone>
-    <phone dial="callHome(message)"></phone>
-    <phone dial="callHome(message)"></phone>
+    <phone number="555-1235" network="network" make-call="leaveVoicemail(number, message)"></phone>
+    <phone number="123-5555" network="network" make-call="leaveVoicemail(number, message)"></phone>
   </div>
 
 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.4/angular.js"></script>
