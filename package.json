@@ -1,0 +1,9 @@
+{
+  "name" : "angular-egghead-tutorial",
+  "version": "0.0.1",
+
+  "devDependencies": {
+    "mocha": "1.8.x",
+    "chai" : "1.5.x"
+  }
+}
