@@ -1,3 +1,5 @@
 function FirstController($scope) {
-  $scope.data = { message: "Jonathan" }
+}
+
+function SecondController($scope) {
 }
