@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <title>Zippy</title>
+
+  <link rel="stylesheet" href="vendor/zurb/foundation/stylesheets/foundation.css" type="text/css" media="screen" charset="utf-8">
+  
+</head>
+
+<body>
+  <div ng-app="app">
+    <input type="text" ng-model="model.title">
+    <input type="text" ng-model="model.content">
+
+    <zippy title="{{model.title}}">
+      this is the {{model.content}}
+    </zippy>
+  </div>
+  
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.4/angular.js"></script>
+<script src="zippy.js"></script>
+</body>
+</html>
