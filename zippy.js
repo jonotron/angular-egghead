@@ -7,7 +7,7 @@ app.directive('zippy', function() {
     scope: {
       title: "@" 
     },
-    template: '<div><h3 ng-click="toggleContent()">{{title}}</h3><div ng-show="isContentVisible" ng-transclude></div></div>',
+    templateUrl: 'zippy.tmpl.html',
 
     link: function(scope) {
       scope.isContentVisible = false;
